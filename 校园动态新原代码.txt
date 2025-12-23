@@ -1,0 +1,1090 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>重庆市兼善中学龙凤校区-校园动态</title>
+    <!-- 网站图标 -->
+    <link rel="icon" href="1766489746822.png" type="image/png">
+    <link rel="shortcut icon" href="1766489746822.png" type="image/png">
+    <link rel="apple-touch-icon" href="1766489746822.png" sizes="180x180">
+    <link rel="icon" href="1766489746822.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="1766489746822.png" sizes="16x16" type="image/png">
+    
+    <!-- 预加载图片 -->
+    <link rel="preload" href="school-badge.png" as="image" type="image/png">
+    <link rel="preload" href="1766489746822.png" as="image" type="image/png">
+    <link rel="preload" href="photo-1541339907198-e08756dedf3f.webp" as="image" type="image/webp">
+    <link rel="preload" href="微信图片_2025-11-17_185736_358.jpg" as="image" type="image/jpeg">
+    <link rel="preload" href="微信图片_2025-12-03_171204_400.png" as="image" type="image/png">
+    <link rel="preload" href="微信图片_2025-11-12_165309_230.jpg" as="image" type="image/jpeg">
+    <link rel="preload" href="微信图片_2025-12-03_192238_015.jpg" as="image" type="image/jpeg">
+    <link rel="preload" href="微信图片_2025-12-03_193548_981.jpg" as="image" type="image/jpeg">
+    <link rel="preload" href="微信图片_2025-12-03_192515_798.jpg" as="image" type="image/jpeg">
+    <style>
+        :root {
+            --primary-color: #1a5f7a;
+            --primary-dark: #0f4a61;
+            --primary-light: #2d7a9c;
+            --secondary-color: #4c9f70;
+            --secondary-dark: #3a7d56;
+            --accent-color: #ffc107;
+            --light-color: #f8f9fa;
+            --dark-color: #343a40;
+            --gray-color: #6c757d;
+            --light-gray: #e9ecef;
+            --text-color: #333;
+            --text-light: #6c757d;
+            --border-radius: 12px;
+            --box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            --transition: all 0.3s ease;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', 'Microsoft YaHei', sans-serif;
+        }
+        
+        body {
+            background-color: #f8fafc;
+            color: var(--text-color);
+            line-height: 1.7;
+            scroll-behavior: smooth;
+            font-weight: 400;
+            overflow-x: hidden;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        /* 头部样式 */
+        header {
+            background-color: rgba(255, 255, 255, 0.4);
+            color: var(--primary-color);
+            padding: 1rem 0;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            transition: var(--transition);
+            transform: translateY(0);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo h1 {
+            font-size: 1.8rem;
+            margin-left: 12px;
+            font-weight: 600;
+            letter-spacing: -0.5px;
+        }
+        
+        .logo-img {
+            width: 52px;
+            height: 52px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 10px rgba(26, 95, 122, 0.3);
+            transition: var(--transition);
+            overflow: hidden;
+            background-color: white;
+            padding: 5px;
+        }
+        
+        .logo-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            border-radius: 50%;
+        }
+        
+        .logo:hover .logo-img {
+            transform: rotate(15deg) scale(1.05);
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        
+        nav li {
+            margin-left: 2rem;
+            position: relative;
+        }
+        
+        nav a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+            transition: var(--transition);
+            padding: 8px 0;
+            display: inline-block;
+            font-size: 1.05rem;
+            position: relative;
+            text-shadow: 0 1px 2px rgba(255, 255, 255, 0.5);
+        }
+        
+        nav a.active,
+        nav a:hover {
+            color: var(--secondary-color);
+        }
+        
+        nav a:after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 3px;
+            bottom: 0;
+            left: 0;
+            background: linear-gradient(to right, var(--secondary-color), var(--accent-color));
+            transition: width 0.3s;
+            border-radius: 2px;
+        }
+        
+        nav a.active:after,
+        nav a:hover:after {
+            width: 100%;
+        }
+        
+        /* 横幅区域 */
+        #banner {
+            scroll-margin-top: 80px;
+        }
+        
+        .banner {
+            background: linear-gradient(135deg, rgba(26, 95, 122, 0.85) 0%, rgba(76, 159, 112, 0.8) 100%), url('photo-1541339907198-e08756dedf3f.webp') center/cover no-repeat;
+            color: white;
+            padding: 5rem 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .banner::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" fill="%23ffffff" opacity="0.05"><polygon points="0,0 1000,50 1000,100 0,100"/></svg>');
+            background-size: cover;
+        }
+        
+        .banner-content {
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeInUp 1s ease 0.3s forwards;
+        }
+        
+        .banner h2 {
+            font-size: 2.8rem;
+            margin-bottom: 1.5rem;
+            font-weight: 700;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            letter-spacing: -0.5px;
+        }
+        
+        .banner p {
+            font-size: 1.3rem;
+            max-width: 700px;
+            margin: 0 auto;
+            opacity: 0.9;
+            font-weight: 300;
+        }
+        
+        /* 主要内容区 */
+        .main-content {
+            padding: 4rem 0;
+        }
+        
+        #news-section {
+            scroll-margin-top: 80px;
+        }
+        
+        #events {
+            scroll-margin-top: 80px;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+            color: var(--primary-color);
+            position: relative;
+            padding-bottom: 1rem;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+        
+        .section-title.animate {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+            border-radius: 2px;
+        }
+        
+        /* 新闻动态 - 修改为6列布局 */
+        .news-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-bottom: 4rem;
+        }
+        
+        .news-card {
+            background: white;
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--box-shadow);
+            transition: var(--transition);
+            position: relative;
+            opacity: 0;
+            transform: translateY(30px);
+        }
+        
+        .news-card.animate {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        /* 为6个新闻卡片设置延迟动画 */
+        .news-card:nth-child(1) { transition-delay: 0.1s; }
+        .news-card:nth-child(2) { transition-delay: 0.2s; }
+        .news-card:nth-child(3) { transition-delay: 0.3s; }
+        .news-card:nth-child(4) { transition-delay: 0.4s; }
+        .news-card:nth-child(5) { transition-delay: 0.5s; }
+        .news-card:nth-child(6) { transition-delay: 0.6s; }
+        
+        .news-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+        }
+        
+        .news-img {
+            height: 220px;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .news-img::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 40%;
+            background: linear-gradient(to top, rgba(0,0,0,0.4), transparent);
+        }
+        
+        .news-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.7s;
+        }
+        
+        .news-card:hover .news-img img {
+            transform: scale(1.08);
+        }
+        
+        .news-content {
+            padding: 1.8rem;
+        }
+        
+        .news-date {
+            color: var(--text-light);
+            font-size: 0.9rem;
+            margin-bottom: 0.8rem;
+            display: flex;
+            align-items: center;
+        }
+        
+        .news-date::before {
+            content: '📅';
+            margin-right: 6px;
+        }
+        
+        .news-title {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            color: var(--dark-color);
+            font-weight: 600;
+            line-height: 1.4;
+        }
+        
+        .news-excerpt {
+            color: var(--text-light);
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+        
+        /* 阅读更多按钮样式 */
+        .read-more {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 20px;
+            background: linear-gradient(135deg, var(--primary-color), var(--primary-light));
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            border-radius: 50px;
+            transition: var(--transition);
+            box-shadow: 0 4px 15px rgba(26, 95, 122, 0.2);
+            position: relative;
+            overflow: hidden;
+            font-size: 0.95rem;
+        }
+        
+        .read-more::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: left 0.5s;
+        }
+        
+        .read-more:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(26, 95, 122, 0.3);
+            background: linear-gradient(135deg, var(--primary-dark), var(--primary-color));
+        }
+        
+        .read-more:hover::before {
+            left: 100%;
+        }
+        
+        .read-more .arrow {
+            transition: transform 0.3s ease;
+        }
+        
+        .read-more:hover .arrow {
+            transform: translateX(4px);
+        }
+        
+        /* 查看更多按钮 - 调整间距 */
+        .more-news {
+            text-align: center;
+            margin: 3rem 0 5rem; /* 增加了底边距，从2rem改为5rem */
+        }
+        
+        .more-btn {
+            display: inline-block;
+            padding: 12px 28px;
+            background: white;
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 600;
+            border-radius: 50px;
+            transition: var(--transition);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            border: 2px solid var(--primary-light);
+        }
+        
+        .more-btn:hover {
+            background: var(--primary-color);
+            color: white;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(26, 95, 122, 0.25);
+        }
+        
+        /* 活动日历 - 调整上边距 */
+        .events {
+            background-color: white;
+            border-radius: var(--border-radius);
+            padding: 2.5rem;
+            box-shadow: var(--box-shadow);
+            margin-bottom: 4rem;
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+            margin-top: 1rem; /* 增加上边距，使与查看更多按钮有更大间距 */
+        }
+        
+        .events.animate {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .event-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 1.5rem;
+        }
+        
+        .event-item {
+            display: flex;
+            border-left: 4px solid var(--secondary-color);
+            padding: 1.5rem;
+            margin-bottom: 0;
+            background: var(--light-gray);
+            border-radius: 0 var(--border-radius) var(--border-radius) 0;
+            transition: var(--transition);
+            opacity: 0;
+            transform: translateX(-20px);
+        }
+        
+        .event-item.animate {
+            opacity: 1;
+            transform: translateX(0);
+        }
+        
+        .event-item:nth-child(1) { transition-delay: 0.1s; }
+        .event-item:nth-child(2) { transition-delay: 0.2s; }
+        .event-item:nth-child(3) { transition-delay: 0.3s; }
+        .event-item:nth-child(4) { transition-delay: 0.4s; }
+        .event-item:nth-child(5) { transition-delay: 0.5s; }
+        .event-item:nth-child(6) { transition-delay: 0.6s; }
+        
+        .event-item:hover {
+            transform: translateX(5px);
+            background: white;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+        
+        .event-date {
+            min-width: 80px;
+            text-align: center;
+            margin-right: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        
+        .event-day {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            line-height: 1;
+        }
+        
+        .event-month {
+            color: var(--text-light);
+            font-size: 0.9rem;
+            margin-top: 5px;
+        }
+        
+        .event-info h3 {
+            font-size: 1.2rem;
+            margin-bottom: 0.8rem;
+            color: var(--dark-color);
+            font-weight: 600;
+        }
+        
+        .event-info p {
+            color: var(--text-light);
+            margin-bottom: 0.3rem;
+            font-size: 0.95rem;
+        }
+        
+        /* 页脚 */
+        footer {
+            background: linear-gradient(135deg, var(--dark-color) 0%, #2c3e50 100%);
+            color: white;
+            padding: 3rem 0 1.5rem;
+            text-align: center;
+        }
+        
+        .footer-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-bottom: 2rem;
+        }
+        
+        .footer-section {
+            flex: 1;
+            min-width: 250px;
+            margin-bottom: 2rem;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+        
+        .footer-section.animate {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .footer-section h3 {
+            margin-bottom: 1.5rem;
+            color: var(--accent-color);
+            font-weight: 600;
+            position: relative;
+            display: inline-block;
+        }
+        
+        .footer-section h3::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            width: 40px;
+            height: 2px;
+            background-color: var(--accent-color);
+        }
+        
+        .footer-bottom {
+            margin-top: 2rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            padding-top: 1.5rem;
+            font-size: 0.9rem;
+            opacity: 0.7;
+        }
+        
+        /* 动画关键帧 */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        /* 响应式设计 */
+        @media (max-width: 1200px) {
+            .news-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+            }
+            
+            nav ul {
+                margin-top: 1.2rem;
+            }
+            
+            nav li {
+                margin: 0 0.8rem;
+            }
+            
+            .banner h2 {
+                font-size: 2.2rem;
+            }
+            
+            .banner p {
+                font-size: 1.1rem;
+            }
+            
+            #banner, #news-section, #events {
+                scroll-margin-top: 120px;
+            }
+            
+            .news-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .event-list {
+                grid-template-columns: 1fr;
+            }
+            
+            /* 移动端调整查看更多按钮和活动日历间距 */
+            .more-news {
+                margin: 2.5rem 0 4rem; /* 移动端适当减小间距 */
+            }
+            
+            .events {
+                margin-top: 0.5rem; /* 移动端减小上边距 */
+            }
+        }
+        
+        /* 移动端优化 */
+        @media (max-width: 480px) {
+            .container {
+                width: 95%;
+            }
+            
+            .logo h1 {
+                font-size: 1.4rem;
+            }
+            
+            .logo-img {
+                width: 44px;
+                height: 44px;
+            }
+            
+            .banner {
+                padding: 3.5rem 0;
+            }
+            
+            .banner h2 {
+                font-size: 1.8rem;
+            }
+            
+            .banner p {
+                font-size: 1rem;
+            }
+            
+            .news-card {
+                margin-bottom: 1.5rem;
+            }
+            
+            .news-img {
+                height: 200px;
+            }
+            
+            .event-item {
+                flex-direction: column;
+                border-left: none;
+                border-top: 4px solid var(--secondary-color);
+                padding-left: 1.5rem;
+                padding-top: 1.5rem;
+                border-radius: 0 0 var(--border-radius) var(--border-radius);
+            }
+            
+            .event-date {
+                margin-right: 0;
+                margin-bottom: 1rem;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+            }
+            
+            .event-day {
+                font-size: 1.6rem;
+                margin-right: 0.5rem;
+            }
+            
+            .footer-section {
+                min-width: 100%;
+            }
+            
+            nav ul {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            
+            nav li {
+                margin: 0.4rem;
+            }
+            
+            nav a {
+                font-size: 0.95rem;
+            }
+            
+            #banner, #news-section, #events {
+                scroll-margin-top: 140px;
+            }
+        }
+        
+        /* 加载动画 */
+        .loading {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            transition: opacity 0.5s ease, visibility 0.5s ease;
+        }
+        
+        .loading.hidden {
+            opacity: 0;
+            visibility: hidden;
+        }
+        
+        .spinner {
+            width: 50px;
+            height: 50px;
+            border: 5px solid rgba(26, 95, 122, 0.2);
+            border-radius: 50%;
+            border-top-color: var(--primary-color);
+            animation: spin 1s ease-in-out infinite;
+        }
+        
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <!-- 加载动画 -->
+    <div class="loading" id="loading">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- 头部 -->
+    <header id="header">
+        <div class="container header-content">
+            <div class="logo">
+                <div class="logo-img">
+                    <img src="1766489746822.png" alt="兼善中学校徽">
+                </div>
+                <h1>重庆市兼善中学龙凤校区</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#banner" class="nav-link active">首页</a></li>
+                    <li><a href="#news-section" class="nav-link">新闻动态</a></li>
+                    <li><a href="#events" class="nav-link">活动日历</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 横幅 -->
+    <section class="banner" id="banner">
+        <div class="container banner-content">
+            <h2>欢迎来到重庆市兼善中学龙凤校区动态网站</h2>
+            <p>及时了解学校最新动态、活动安排和校园新闻</p>
+        </div>
+    </section>
+
+    <!-- 主要内容 -->
+    <main class="container main-content">
+        <!-- 新闻动态 -->
+        <section id="news-section">
+            <h2 class="section-title" id="news-title">最新动态</h2>
+            <div class="news-grid">
+                <article class="news-card" id="news-card-1">
+                    <div class="news-img">
+                        <img src="微信图片_2025-12-03_171204_400.png" alt="新闻图片">
+                    </div>
+                    <div class="news-content">
+                        <div class="news-date">2025年12月3日 &nbsp;&nbsp;15:34 &nbsp;&nbsp;重庆</div>
+                        <h3 class="news-title">以"视"促成长 以"导"促提升 || 北碚区进修学院莅临122中（兼善中学龙凤校区）集体视导</h3>
+                        <p class="news-excerpt">为深化新课程标准研究，推动课堂教学精准对接学科核心素养培育目标，全面核查学校育人质量关键指标，引领学校办学高质量提升，11月28日上午，北碚区教师进修学院陈伏兰副书记组织各学科教研员组成视导组赴122中（兼善中学龙凤校区）开展集体视导工作。本次视导通过"随机听课、评课交流、师生座谈、集中反馈"四维调研模式，为我校教育教学"把脉"，为课堂"提质"，为学校发展"助力"。</p>
+                        <a href="https://mp.weixin.qq.com/s/NnWhRREot_JhcNINhGMkdw" class="read-more">
+                            阅读更多 <span class="arrow">→</span>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="news-card" id="news-card-2">
+                    <div class="news-img">
+                        <img src="微信图片_2025-11-17_185736_358.jpg" alt="新闻图片">
+                    </div>
+                    <div class="news-content">
+                        <div class="news-date">2025年11月17日 &nbsp;&nbsp;13:25 &nbsp;&nbsp;重庆</div>
+                        <h3 class="news-title">重庆市兼善中学龙凤校区开展第34个全国消防日校园消防宣传系列活动</h3>
+                        <p class="news-excerpt">学校结合2025年第34个"119"全国消防日，开展了以"全民消防、生命至上--安全用火用电"为主题的消防系列宣传活动，增强校园消防安全管理能力，提高师生员工消防安全意识和灭火基本技能。学校于11月11日组织全体师生员工消防应急逃生疏散演练、灭火培训和消防安全知识讲座系列活动。</p>
+                        <a href="https://mp.weixin.qq.com/s/bxkVggcphwBItSEB6h7tcQ" class="read-more">
+                            阅读更多 <span class="arrow">→</span>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="news-card" id="news-card-3">
+                    <div class="news-img">
+                        <img src="微信图片_2025-11-12_165309_230.jpg" alt="新闻图片">
+                    </div>
+                    <div class="news-content">
+                        <div class="news-date">2025年11月12日 &nbsp;&nbsp;15:21 &nbsp;&nbsp;重庆</div>
+                        <h3 class="news-title">岁月如歌 芳华永驻 || 我校温情举办重阳节退休教师庆祝活动</h3>
+                        <p class="news-excerpt">十四岁，是含苞待放的花季，是扬帆起航的码头，更是从少年走向青年的重要里程碑。2025年11月7日下午，重庆市兼善中学龙凤校区为九年级学子精心策划的"礼承古韵，志启新程"青春礼在致真厅温情上演。这是一场融合传统文化与现代教育的成长仪式，更是一次家校携手、共护青春的深情见证。</p>
+                        <a href="https://mp.weixin.qq.com/s/XD80rtJm8NAkOfTi6X3QmQ" class="read-more">
+                            阅读更多 <span class="arrow">→</span>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="news-card" id="news-card-4">
+                    <div class="news-img">
+                        <img src="微信图片_2025-12-03_192238_015.jpg" alt="新闻图片">
+                    </div>
+                    <div class="news-content">
+                        <div class="news-date">2025年10月30日 &nbsp;&nbsp;11:56 &nbsp;&nbsp;重庆</div>
+                        <h3 class="news-title">岁月如歌 芳华永驻 || 我校温情举办重阳节退休教师庆祝活动</h3>
+                        <p class="news-excerpt">秋光正好，情暖重阳。2025年10月29日上午，重庆市第一二二中学（兼善中学龙凤校区）校园里洋溢着温馨与敬意，“岁月如歌 芳华永驻”重阳节退休教师庆祝活动如约举行。曾经在三尺讲台默默耕耘、为教育事业奉献青春的退休教师们重返校园，共叙教育情怀，同庆重阳佳节。</p>
+                        <a href="https://mp.weixin.qq.com/s/Ufz683lkcVwl10vO1yqmHQ" class="read-more">
+                            阅读更多 <span class="arrow">→</span>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="news-card" id="news-card-5">
+                    <div class="news-img">
+                        <img src="微信图片_2025-12-03_192515_798.jpg" alt="新闻图片">
+                    </div>
+                    <div class="news-content">
+                        <div class="news-date">2025年10月29日 &nbsp;&nbsp;15:48 &nbsp;&nbsp;重庆</div>
+                        <h3 class="news-title">蝉联桂冠、荣耀再续 || 重庆市第一二二中学（兼善中学龙凤校区）田径队参加北碚区第45届中小学生田径运动会简报</h3>
+                        <p class="news-excerpt">10月22-24日，北碚区第 45 届中小学生田径运动会在区体育中心隆重举行。重庆市第一二二中学（兼善龙凤校区）田径队的 10 名运动员在赖彬、张东两位教练的带领下出征，在为期 3 天的赛事中，以顽强的意志、出彩的成绩展现了我校学子的青春风采，最终连续10多年蝉联初中组团体总分第一名的优异成绩。</p>
+                        <a href="https://mp.weixin.qq.com/s/7qfoBsbrlx7-CHBGy_KOFg" class="read-more">
+                            阅读更多 <span class="arrow">→</span>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="news-card" id="news-card-6">
+                    <div class="news-img">
+                        <img src="微信图片_2025-12-03_193548_981.jpg" alt="新闻图片">
+                    </div>
+                    <div class="news-content">
+                        <div class="news-date">2025年10月23日 &nbsp;&nbsp;18:04 &nbsp;&nbsp;重庆</div>
+                        <h3 class="news-title">金秋共研韵 佳课启新思 || 北碚区2025年湘版新教材中小学音乐教师全员培训活动简报</h3>
+                        <p class="news-excerpt">为深化我区音乐教师对湘版新教材的理解，推动新课标理念精准落地，2025年10月21日上午，由北碚区教师进修学院主办、重庆市第一二二中学承办的“北碚区2025年湘版新教材中小学音乐教师全员培训”在重庆市第一二二中学校成功举办。本次培训融合课例展示与专家讲座等多元形式，为参训教师搭建了一个交流互鉴、共促发展的专业平台，有效助力区域音乐教育质量提升。</p>
+                        <a href="https://mp.weixin.qq.com/s/c0QZUQ3OQmnBOKIhL5kdRw" class="read-more">
+                            阅读更多 <span class="arrow">→</span>
+                        </a>
+                    </div>
+                </article>
+            </div>
+            
+            <!-- 查看更多按钮 -->
+            <div class="more-news">
+                <a href="#" class="more-btn">查看更多新闻</a>
+            </div>
+        </section>
+
+        <!-- 活动日历 -->
+        <section>
+            <h2 class="section-title" id="events-title">近期活动</h2>
+            <div class="events" id="events">
+                <div class="event-list">
+                    <div class="event-item" id="event-item-1">
+                        <div class="event-date">
+                            <div class="event-day">12月</div>
+                            <div class="event-month">上旬</div>
+                        </div>
+                        <div class="event-info">
+                            <h3>待定</h3>
+                            <p>时间: 待定</p>
+                            <p>地点: 待定</p>
+                            <p>内容: 待定</p>
+                        </div>
+                    </div>
+
+                    <div class="event-item" id="event-item-2">
+                        <div class="event-date">
+                            <div class="event-day">12月</div>
+                            <div class="event-month">中旬</div>
+                        </div>
+                        <div class="event-info">
+                            <h3>待定</h3>
+                            <p>时间: 待定</p>
+                            <p>地点: 待定</p>
+                            <p>内容: 待定</p>
+                        </div>
+                    </div>
+
+                    <div class="event-item" id="event-item-3">
+                        <div class="event-date">
+                            <div class="event-day">12月</div>
+                            <div class="event-month">下旬</div>
+                        </div>
+                        <div class="event-info">
+                            <h3>元旦汇演彩排</h3>
+                            <p>时间: 2025年12月30日下午</p>
+                            <p>地点: 学校操场</p>
+                            <p>内容: 元旦汇演节目彩排</p>
+                        </div>
+                    </div>
+                    
+                    <div class="event-item" id="event-item-4">
+                        <div class="event-date">
+                            <div class="event-day">12月</div>
+                            <div class="event-month">下旬</div>
+                        </div>
+                        <div class="event-info">
+                            <h3>元旦汇演正式演出</h3>
+                            <p>时间: 2025年12月31日下午</p>
+                            <p>地点: 学校操场</p>
+                            <p>内容: 各班才艺表演</p>
+                        </div>
+                    </div>
+                    
+                    <div class="event-item" id="event-item-5">
+                        <div class="event-date">
+                            <div class="event-day">2026年</div>
+                            <div class="event-month">1月上旬</div>
+                        </div>
+                        <div class="event-info">
+                            <h3>待定</h3>
+                            <p>时间: 待定</p>
+                            <p>地点: 待定</p>
+                            <p>内容: 待定</p>
+                        </div>
+                    </div>
+                    
+                    <div class="event-item" id="event-item-6">
+                        <div class="event-date">
+                            <div class="event-day">2026年</div>
+                            <div class="event-month">1月中旬</div>
+                        </div>
+                        <div class="event-info">
+                            <h3>待定</h3>
+                            <p>时间: 待定</p>
+                            <p>地点: 待定</p>
+                            <p>内容: 待定</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 页脚 -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section" id="footer-section">
+                    <h3>关注我们</h3>
+                    <p>微信公众号: "重庆市第一二二中学"</p>
+                    <p>微信服务号："重庆市第一二二中学校"</p>
+                    <p>QQ频道号: CQ122zx122</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 重庆市第一二二中学校. 版权所有</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 脚本 -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // 隐藏加载动画
+            setTimeout(() => {
+                const loading = document.getElementById('loading');
+                loading.classList.add('hidden');
+                
+                // 初始化滚动动画
+                initScrollAnimations();
+            }, 800);
+            
+            const yearElement = document.querySelector('.footer-bottom p');
+            if (yearElement) {
+                const currentYear = new Date().getFullYear();
+                yearElement.innerHTML = `&copy; ${currentYear} 重庆市第一二二中学校. 版权所有`;
+            }
+
+            const navLinks = document.querySelectorAll('.nav-link');
+            const navHeight = document.querySelector('header').offsetHeight;
+            let lastScrollTop = 0;
+
+            // 点击导航切换高亮与滚动
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    const targetId = this.getAttribute('href');
+                    const targetElement = document.querySelector(targetId);
+                    
+                    if (targetElement) {
+                        navLinks.forEach(l => l.classList.remove('active'));
+                        this.classList.add('active');
+                        
+                        window.scrollTo({
+                            top: targetElement.offsetTop - navHeight + 10,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+
+            // 滚动时自动更新导航高亮
+            window.addEventListener('scroll', function() {
+                const scrollPosition = window.scrollY + navHeight + 20;
+                const sectionIds = ['#banner', '#news-section', '#events'];
+
+                sectionIds.forEach((sectionId, index) => {
+                    const section = document.querySelector(sectionId);
+                    if (section) {
+                        const sectionTop = section.offsetTop;
+                        const sectionBottom = sectionTop + section.offsetHeight;
+
+                        if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
+                            navLinks.forEach(link => link.classList.remove('active'));
+                            navLinks[index].classList.add('active');
+                        }
+                    }
+                });
+
+                // 触发滚动动画
+                checkScrollAnimations();
+            });
+
+            navLinks[0].classList.add('active');
+
+            // 滚动动画函数
+            function initScrollAnimations() {
+                // 初始时检查可见元素
+                checkScrollAnimations();
+            }
+            
+            function checkScrollAnimations() {
+                const animatedElements = document.querySelectorAll('.section-title, .news-card, .events, .event-item, .footer-section');
+                
+                animatedElements.forEach(element => {
+                    const elementTop = element.getBoundingClientRect().top;
+                    const elementVisible = 150;
+                    
+                    if (elementTop < window.innerHeight - elementVisible) {
+                        element.classList.add('animate');
+                    }
+                });
+            }
+
+            // HTTP/2图片优化
+            if (window.addEventListener) {
+                window.addEventListener('load', function() {
+                    const newsImgs = document.querySelectorAll('.news-img img');
+                    newsImgs.forEach(img => {
+                        if (!img.complete && img.src.endsWith('.webp')) {
+                            img.src = img.src;
+                        }
+                    });
+                });
+            }
+            
+            // 查看更多按钮点击事件（可选功能）
+            const moreBtn = document.querySelector('.more-btn');
+            if (moreBtn) {
+                moreBtn.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    alert('更多新闻功能正在开发中，敬请期待！');
+                });
+            }
+        });
+    </script>
+</body>
+</html>
